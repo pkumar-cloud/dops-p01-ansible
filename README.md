@@ -1,4 +1,4 @@
-This repos is responsible for cinfuguring the Jenkins cluster and it's dependent software.
+This repos is responsible for configuration the Jenkins cluster and it's dependent software.
 
 As part of this ansible playbook we install java, maven and docker inside slave node. Docker and docker compose inside master node.
 
