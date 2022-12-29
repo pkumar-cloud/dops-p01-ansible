@@ -7,6 +7,6 @@ Below are the steps to execute the ansible playbook.
 
 Please make sure inventory has updated with master and slave IPs.
 
-1. ansible-playbook -i inventory setup_playbook_ubunty.yml
+1. ansible-playbook -i inventory setup_playbook_ubuntu.yml
 2. ansible-playbook -i inventory jenkins_install_playbook.yml
 
