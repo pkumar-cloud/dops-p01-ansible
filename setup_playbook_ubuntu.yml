@@ -1,9 +1,9 @@
 ---
 - hosts: slave:master
   user: ubuntu
-  become: true
+  become: true   #become root user
   tasks:
-    - name: Install aptitude
+    - name: Install aptitude   #apt package manager
       apt:
        name: aptitude
        state: latest
