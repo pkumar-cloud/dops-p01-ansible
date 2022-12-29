@@ -73,20 +73,36 @@
        name: maven
        state: present
       tags: maven
+# - hosts: "master"
+#   user: ubuntu
+#   become: true
+#   tasks:
+#    - name: Copying Docker compose related files
+#      copy:
+#        src: "{{ item }}"
+#        dest: tmp/
+#      with_items:
+#       - /Users/stalinmahapatra/codebase/jenkins-setup-docker/docker-compose.yaml
+#       - /Users/stalinmahapatra/codebase/jenkins-setup-docker/nginx.conf
+#      tags: copy
+#    - name: Install Jenkins and Nginx using Docker compose
+#      shell:
+#        cmd: "docker-compose up -d"
+#        chdir: tmp/ 
 - hosts: "master"
   user: ubuntu
   become: true
   tasks:
    - name: Copying Docker compose related files
-     copy:
+     copy: 
        src: "{{ item }}"
        dest: tmp/
      with_items:
-      - /Users/stalinmahapatra/codebase/jenkins-setup-docker/docker-compose.yaml
-      - /Users/stalinmahapatra/codebase/jenkins-setup-docker/nginx.conf
+      - docker-compose.yaml
+      - nginx.conf
      tags: copy
    - name: Install Jenkins and Nginx using Docker compose
      shell:
        cmd: "docker-compose up -d"
-       chdir: tmp/     
+       chdir: tmp/    
 
