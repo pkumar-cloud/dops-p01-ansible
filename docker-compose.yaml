@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   jenkins:
-       image: jenkins/jenkins:2.361.1
+       image: jenkins/jenkins:2.361.1 # 2.361.1 (rpt02), 2.332.3 (rpt01)
        privileged: true
        user: root
        expose:
