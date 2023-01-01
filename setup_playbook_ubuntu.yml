@@ -55,7 +55,7 @@
   user: ubuntu
   become: true
   vars:
-    container_count: 4
+    container_count: 2 # Update if need more slaves
     packages:
      - openjdk-11-jdk
   tasks:

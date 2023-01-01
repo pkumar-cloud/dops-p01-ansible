@@ -1,11 +1,11 @@
 [master]
-18.209.18.194
+35.91.161.183
 [master:vars]
 ansible_user=ubuntu
-ansible_ssh_private_key_file=~/Personal/RTP/rtp-devops.pem
+ansible_ssh_private_key_file=~/rtp/dops-p01-tf/pkdev-infra/pkdev.pem
 [slave]
-54.224.107.148
+52.38.241.253
 [slave:vars]
 ansible_user=ubuntu
-ansible_ssh_private_key_file=~/Personal/RTP/rtp-devops.pem
+ansible_ssh_private_key_file=~/rtp/dops-p01-tf/pkdev-infra/pkdev.pem
 
